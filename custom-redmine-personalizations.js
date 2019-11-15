@@ -10,7 +10,12 @@ window.addEventListener("load", () => {
 
     // Replace text in all td (shorten project names, for example)
     $.each($('td'), function (index, value) {
-            $(value).html($(value).html().replace("texto 1", "H2 - "));
-        });
+        $(value).html($(value).html().replace("texto 1", "H2 - "));
+    });
+    
+    // Make link to issues longer in children view and issues view
+    $.each($('td.subject'), function (index, value) {
+        $(value).html($(value).html().replace("</a>", "") + "</a>");
+    });
 }, false)
 
