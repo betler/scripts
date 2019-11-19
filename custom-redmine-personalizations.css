@@ -15,3 +15,8 @@ table.list tbody td, table.list tbody tr td {
     margin-left: 40px;
     padding-top: 65px;
 }
+
+div.issue {
+    background: #ffffff;
+    border: 0;
+}
