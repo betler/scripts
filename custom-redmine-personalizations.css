@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap');
 
 body {
+   /* Change main font */
    font-family: "Open Sans", Roboto;
 }
 
 table.list tbody td, table.list tbody tr td {
    /* Bigger children task list font */
    font-size: 103%;
+}
+
+#main {
+    /* Reduce blank space left and top */
+    margin-left: 40px;
+    padding-top: 65px;
 }
