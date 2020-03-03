@@ -3,11 +3,12 @@
 body {
    /* Change main font */
    font-family: "Open Sans", Roboto;
+   font-size:95%;
 }
 
 table.list tbody td, table.list tbody tr td {
    /* Bigger children task list font */
-   font-size: 103%;
+   font-size: 100%;
 }
 
 #main {
@@ -19,4 +20,39 @@ table.list tbody td, table.list tbody tr td {
 div.issue {
     background: #ffffff;
     border: 0;
+}
+
+td.project {
+    max-width: 6rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+td.fixed_version {
+    direction: rtl;
+    max-width: 5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+td.assigned_to {
+    max-width: 5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+td.done_ratio td {
+    content: attr(title);
+}
+
+select,
+input[type=text] {
+    font-size:100%;
+}
+
+.changeset-changes {
+    font-size: 90%;
 }
