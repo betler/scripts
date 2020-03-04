@@ -6,6 +6,22 @@ Waits until port localhost:8080 is stopped (it stops accepting connections).
 ### TO-DO
 * Accept server and port as arguments
 
+## First occurrence of text in file
+
+It gives the line number. Thanks to awk '/12:06:23/{print NR;exit}' file
+
+```sh
+awk '/12:06:23/{print NR;exit}' file
+```
+
+## Extract and count IP from log file
+
+Thanks to https://stackoverflow.com/a/55577763
+
+```sh
+grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' error.log | sort | uniq -c | sort -nr > occurences.txt
+```
+
 # Linux administration
 ## Install OpenJDK 8 in Ubuntu
 sudo add-apt-repository ppa:openjdk-r/ppa
