@@ -56,3 +56,36 @@ input[type=text] {
 .changeset-changes {
     font-size: 90%;
 }
+
+#login-form {
+    width: 480px;
+    font-size: 120%;
+}
+
+#login-form #login-submit {
+    font-size: 120%;
+}
+
+#values_fixed_version_id_1 {
+    width: 500px;
+    max-width: 500px !important;
+}
+
+body.action-login {
+    background-image: url(https://source.unsplash.com/weekly?water,scenery);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.action-login #top-menu {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#login-form {
+    border: 0px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#login-form label {
+    color: white !important;
+}
